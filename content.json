@@ -1,0 +1,23 @@
+[
+    {
+        "title":"A day in the life",
+        "category": "people",
+        "images":{
+            "thumb":"img/thumb-1-1.jpg",
+            "large":"img/large-1-1.jpg"
+        },
+        "date":"2013-07-18"
+    },
+    {
+        "title":"A day in the life",
+        "category": "people",
+        "images":{
+            "thumb":"img/thumb-1-1.jpg",
+            "large":"img/large-1-1.jpg"
+        },
+        "date":"2013-07-18"
+    },
+    {
+
+    }
+]
