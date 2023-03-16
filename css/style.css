@@ -378,53 +378,56 @@ Ls-test04-sec09
 }
 
 /*--------------------------------------
-Ls-test04-sec10
+tab
 ---------------------------------------*/
+.Ls-test04-sec11{
+	max-width:1300px;
+	text-align:center;
+}
 
-.Ls-test04-sec10 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
-  padding-left: 90px;
+.tab{
+	display:flex;
+	flex-wrap:wrap;
+}
+.tab li a {
+	display:block;
+	background:#ddd;
+	margin:0 2px;
+	padding:10px 20px;
+}
+.tab li.active a{
+	background:#fff;
+}
+.area{
+	display:none;
+	opacity:0;
+	background:#fff;
+	padding:50px 20px;
+}
+.area.is-active{
+	display:block;
+	animation-name:displayAnime;
+	animation-duration:1s;
+	animation-fill-mode:forward;
+}
+
+@keyframes displayAnime{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
 }
 
 /*--------------------------------------
 Ls-test04-sec11
----------------------------------------*/
-
-.Ls-test04-sec11 {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.Ls-test04-sec11__inner {
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 60px;
-}
-
-.Ls-test04-sec11__btn {
-  border: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  width: 250px;
-  background-color: #ffa200;
-  border-radius: 10px;
-  text-decoration: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+ -------------------------------------*/
 
 /*-----------------------------------
  .Ls-test04-sec12
  -------------------------------------*/
+
  .Ls-test04-sec12{
 	padding:80px 30px 80px 30px;
 	background-color:lightgray;
