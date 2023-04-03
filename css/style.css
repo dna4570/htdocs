@@ -41,6 +41,96 @@
 	background-color:lightgray;
 }
 
+.openbtn4{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  background:#D54884;
+  cursor: pointer;
+    width: 50px;
+    height:50px;
+  border-radius: 5px;
+}
+
+/*ボタン内側*/
+.openbtn4 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 2px;
+    border-radius: 5px;
+  background: #fff;
+    width: 45%;
+  }
+
+
+.openbtn4 span:nth-of-type(1) {
+  top:13px;
+}
+
+.openbtn4 span:nth-of-type(2) {
+  top:19px;
+}
+
+.openbtn4 span:nth-of-type(3) {
+  top:25px;
+}
+
+.openbtn4 span:nth-of-type(3)::after {
+  content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
+  position: absolute;
+  top:5px;
+  left:-2px;
+  color: #fff;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+.openbtn4.active span:nth-of-type(1) {
+    top: 14px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn4.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn4.active span:nth-of-type(3){
+    top: 26px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+.openbtn4.active span:nth-of-type(3)::after {
+  content:"Close";/*3つ目の要素のafterにClose表示を指定*/
+    transform: translateY(0) rotate(-45deg);
+  top:5px;
+  left:4px;
+}
+/*========= レイアウトのためのCSS ===============*/
+
+body{
+  background:#f3f3f3;
+    padding:20px;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+.lead{
+  margin:20px 0 0 0;
+}
+
+.btn-block{
+  width:200px;
+  padding: 30px;
+}
 /*----------------------
 .Ls-test04-sec01
 ----------------------*/
@@ -88,22 +178,6 @@
 	margin: 0 auto;
 	padding-top:30px;
 	padding-bottom:30px;
-}
-
-.Ls-test04-sec02__inner{
-	text-align: center;
-	display: inline-block;
-	padding: 0px 30px 0px 30px;
-}
-
-.Ls-test04-sec02__title{
-	font-size: 38px;
-}
-
-.border{
-	border: 2px solid lightgray;
-	margin: 0 auto;
-	max-width: 400px;
 }
 
 .sec02_text{
@@ -184,13 +258,13 @@ Ls-test04-sec04-
 .Ls-test04-sec04__inner{
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content:center;
 
-	max-width:1300px;
+	/* max-width:1300px;
 	align-items:center;
 	text-align: center;
   margin:0 auto;
-	padding:60px 30px 60px 30px;
+	padding:60px 30px 60px 30px; */
 }
 
 .Ls-test04-sec04__card02 {
@@ -477,6 +551,179 @@ Ls-test04-sec11
   list-style:none;
 }
 
+/*new footer*/
+
+/*----------------------------------
+  Footer
+------------------------------------*/
+
+.footer {
+  position: relative;
+  background: #505050;
+  color: #ffffff;
+}
+
+.footer * {
+  color: inherit;
+}
+
+/*内枠*/
+.footer-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*運営情報*/
+.footer-prof {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.footer-prof .logo {
+  width: 250px;
+}
+
+.footer-prof .add {
+  margin-top: 30px;
+}
+
+.footer-prof .sns {
+  margin-top: 30px;
+  /* display: flex; */
+}
+
+.footer-prof .sns li {
+  margin-right: 15px;
+}
+
+/*メインメニュー*/
+.footer-link_01 {
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid #707070;
+}
+
+.footer-link_01 li {
+  border-bottom: 1px solid #707070;
+}
+
+.footer-link_01 a {
+  position: relative;
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.footer-link_01 a:hover {
+  background: #707070;
+  color: #ffffff;
+}
+
+.footer-link_01 a::after {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+}
+
+/*サブメニュー*/
+.footer-link_02 {
+	display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.footer-link_02 li {
+	width: 50%;
+  margin: 10px 0;
+}
+
+.footer-link_02 a {
+	font-size: calc((14 / 16)*1em);
+  text-decoration: none;
+}
+
+.footer-link_02 a:hover {
+	color: #ffffff;
+  text-decoration: underline;
+}
+
+/*コピーライト*/
+.footer-copyright {
+	padding: 10px 20px;
+  background: #000;
+  text-align: center;
+  font-size: calc((12 / 16)*1em);
+}
+
+/*ページトップ*/
+.footer-pagetop {
+	position: absolute;
+  right: 0;
+  top: -61px;
+}
+
+.footer-pagetop a {
+	display: block;
+  width: 60px;
+  height: 0;
+  padding-top: 60px;
+  overflow: hidden;
+  background: #505050;
+}
+
+.footer-pagetop a:hover {
+	background: #707070;
+  color: #ffffff;
+}
+
+.footer-pagetop a::before {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: translate(-50%, -25%) rotate(-45deg);
+}
+
+/*----------------------------------------
+ページトップのためのCSS
+-----------------------------------------*/
+
+#page-top a{
+	background:#942D2F;
+	color:#fff;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	padding:20px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 0.8rem;
+	transition: all 0.3s;
+}
+
+#page-top a:hover{
+	background: #777;
+}
+
+
+
+
 /*----.Ls-footer---------------------*/
 
 .Ls-footer{
@@ -596,6 +843,70 @@ Ls-test04-sec11
   text-decoration: none;
   padding-right: 150px;
   padding-left: 150px;
+}
+
+
+/*========= ページトップのためのCSS ===============*/
+
+#page-top a{
+  background:#942D2F;
+  color:#fff;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding:20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+
+#page-top a:hover{
+  background: #777;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+h1{
+  font-size:1.2rem;
+}
+
+h2{
+  font-size:1.2rem;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+p{
+  margin-top:20px;
+}
+
+small{
+  background:#333;
+  color:#fff;
+  display: block;
+  text-align: center;
+  padding:20px;
+}
+
+#header{
+  background:#333;
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+}
+
+section{
+  padding:100px 30px;
+}
+
+section:nth-child(2n){
+  background:#f3f3f3;
+}
+
+#footer{
+  position: relative;
+  z-index: 2;
 }
 
 /*---------------------------------------
