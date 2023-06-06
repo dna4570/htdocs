@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title> 4-TokyoMetro | TokyoMetroとは | </title>
+<title> htdocs | TokyoMetroとは | </title>
 <meta name="keywords" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" media="all" />
@@ -12,45 +12,51 @@
 <link rel="shortcut icon" href="./image/favicon.ico.png">
 <script type="text/javascript" src="./js/layout/js" async></script>
 </head>
+
 <body>
+<header>
+  <div class="page-header">
+  <div class="page-header__inner">
+    <div >
+      <h1>
+        <a href="index.html">
+          <img src="./image/header_logo.png" alt="">
+        </a>
+      </h1>
+    </div>
+    <div>
+      <nav>
+        <ul class="main-nav">
+          <li>
+            <a href="#"><i class="far fa-list-alt fa-lg"></i>
+              TOPページ
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-list-alt fa-lg"></i>
+              お知らせ
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-list-alt fa-lg"></i>
+              ご利用シーン・事例
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-list-alt fa-lg"></i>
+              CONTACT
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="openbtn4">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-<header class="page-header wrapper">
-  <h1>
-		<a href="index.html">
-      <img src="./image/header_logo.png" alt="">
-		</a>
-  </h1>
-    <nav>
-      <ul class="main-nav">
-        <li>
-					<a href="#"><i class="far fa-list-alt fa-lg"></i>
-						TOPページ
-					</a>
-				</li>
-        <li>
-					<a href="#"><i class="far fa-list-alt fa-lg"></i>
-						お知らせ
-					</a>
-				</li>
-        <li>
-					<a href="#"><i class="far fa-list-alt fa-lg"></i>
-						ご利用シーン・事例
-					</a>
-				</li>
-        <li>
-					<a href="#"><i class="far fa-list-alt fa-lg"></i>
-						CONTACT
-					</a>
-				</li>
-      </ul>
-    </nav>
-
-  <div class="openbtn4">
-    <span></span>
-    <span></span>
-    <span></span>
   </div>
-    <p class="lead"></p>
   </div>
 </header>
 
@@ -108,7 +114,8 @@
 </div>
 
 <div>
-		<div class="Ls-test04-sec02-B">
+	<div class="Ls-test04-sec02-B">
+    <div class="Ls-test04sec02-B__inner">
 			<h1>
 				PORTFOLIO<br>BRANDING
       </h1>
@@ -116,6 +123,7 @@
         infomation ＆ NEWS release
       </p>
 		</div>
+  </div>
 </div>
 
 <div>
@@ -205,17 +213,34 @@
 </div>
 
 <div>
-  <div class="Ls-test04-sec06" >
-    <div class="Ls-test04-sec06__inner" >
-      <h2 class="Ls-test04-sec06__title">
-				ホームページ制作に関する取組
-			</h2>
-        <p class="Ls-test04-sec06_text">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequuntur, fuga eos odio quos quibusdam itaque modi natus quo assumenda dolores numquam possimus culpa nesciunt quae sunt beatae quia cupiditate?
-				</p>
-    </div>
-  </div>
+
+
+  <div>
+    <div class="Ls-test04-section06">
+      <div class="Ls-test04-section06__inner">
+        <div class="Ls-test04-section06__left_box">
+          <h2>TokyoMetroとは？</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, amet reiciendis autem voluptates saepe numquam
+            blanditiis earum aliquam alias vitae optio temporibus nihil hic corrupti eos non nulla consequatur tempora.
+          </p>
+          <div>
+          </div>
+        </div>
+
+        <div class="Ls-test04-section06__right_box">
+          <img src="./image/image.jpg">
+        </div>
+      </div>
+
+
 </div>
+
+<section class="front_news">
+  <h2 class=""section_head>お知らせ</h2>
+  <p class="news_list_wrap"></p>
+  <a class="news_list_wrap">一覧を見る</a>
+</section>
 
 <div class="Ls-test04-sec11">
 <ul class="tab">
@@ -258,95 +283,85 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-prof">
-      <p class="logo"><img src="image/header_logo.png" alt=""></p>
+      <img src="image/header_logo.png">
         <p class="Ls-footer__address">
           〒104-0045 神奈川県海老名市扇町4-5-16 4階<br>
           [ TEL ]03-XXXX-XXXX [ FAX ]03-xxxx-xxxx
           <br>
           [ 営業時間 ] 月～金（祝日除く）9:00～18:00
         </p>
-      <ul class="sns" style="display:flex; flex-wrap:wrap;">
-        <div class="Ls-footer___right_column_info">
+        <p>
           LP製作について<br>お気軽にご相談ください
-        </div>
-        <!-- <div class="Ls-footer__btn">
-          ご相談・お問合せ
-        </div> -->
-      </ul>
+        </p>
     </div><!-- /.footer-prof -->
-    <ul class="footer-link_01">
-      <li><a href="/service/">サービス</a></li>
-      <li><a href="/price/">料金プラン</a></li>
-      <li><a href="/access/">アクセス</a></li>
-      <li><a href="/contact/">お問合せ</a></li>
-    </ul>
-    <ul class="footer-link_02">
-      <li><a href="/recruit/">サービス</a></li>
-      <li><a href="/company/">お問合せ</a></li>
-      <li><a href="/policy/">サイトポリシー</a></li>
-      <li><a href="/privacy/">プライバシーポリシー</a></li>
-    </ul>
-  </div><!-- /.footer-inner -->
-  <p class="footer-copyright"><small>&copy; 2023 L-sunsui Co.LTD. All Rights Reserved.</small></p>
-  <p class="footer-pagetop"><a href="#top">ページの先頭へ戻る</a></p>
-</footer>
 
-    </div>
-      <p id="page-top"><a href="#">Page Top</a></p>
-  </div>
-
-<div class="Ls-footer" >
-  <div class="Ls-footer__inner" >
-
-
-    <!-- <div class="Ls-footer_footer_title"> -->
-
-    <div class="Ls-footer__gnavi__wrap" id="g-nav-list" >
-      <ul class="Ls-footer__gnavi__lists" id="normal">
-        <li class="Ls-footer__gnavi__list">
-          <a href="#">
-            TOP
-          </a>
-        </li>
-        <li class="Ls-footer__gnavi__list">
-          <a href="#">
-            会社概要
-          </a>
-        </li>
-        <li class="Ls-footer__gnavi__list">
-          <a href="#">
-            個人情報保護
-          </a>
-        </li>
-        <li class="Ls-footer__gnavi__list">
-          <a href="#">
-            当サイトについて
-          </a>
-        </li>
-        <li class="Ls-footer__gnavi__list">
-          <a href="#">
-            Q＆A
-          </a>
-        </li>
-        <li class="Ls-footer__gnavi__list">
-          <a href="#">
-            ユーザーサポート
-          </a>
-        </li>
-        <li class="Ls-footer__gnavi__list">
-          <a href="#">
-            サイトマップ
-          </a>
-        </li>
+    <div class="footer-prof-l">
+      <ul class="footer-link_01">
+        <li><a href="/service/">サービス</a></li>
+        <li><a href="/price/">料金プラン</a></li>
+        <li><a href="/access/">アクセス</a></li>
+        <li><a href="/contact/">お問合せ</a></li>
       </ul>
-      <p id="page-top"><a href="#">Page Top</a></p>
-        <small>
-          <p class="Ls-footer__footer_text_low">
-            © L-sunsui CO., LTD.
-          </p>
-        </small>
+      <ul class="footer-link_02">
+        <li><a href="/recruit/">サービス</a></li>
+        <li><a href="/company/">お問合せ</a></li>
+        <li><a href="/policy/">サイトポリシー</a></li>
+        <li><a href="/privacy/">プライバシーポリシー</a></li>
+      </ul>
+    </div>
+  </div><!-- /.footer-inner -->
+  <ul class="Ls-footer__gnavi__lists" id="normal">
+    <li class="Ls-footer__gnavi__list">
+      <a href="#">
+        TOP
+      </a>
+    </li>
+    <li class="Ls-footer__gnavi__list">
+      <a href="#">
+        会社概要
+      </a>
+    </li>
+    <li class="Ls-footer__gnavi__list">
+      <a href="#">
+        個人情報保護
+      </a>
+    </li>
+    <li class="Ls-footer__gnavi__list">
+      <a href="#">
+        当サイトについて
+      </a>
+    </li>
+    <li class="Ls-footer__gnavi__list">
+      <a href="#">
+        Q＆A
+      </a>
+    </li>
+    <li class="Ls-footer__gnavi__list">
+      <a href="#">
+        ユーザーサポート
+      </a>
+    </li>
+    <li class="Ls-footer__gnavi__list">
+      <a href="#">
+        サイトマップ
+      </a>
+    </li>
+  </ul>
+
+  <div>
   </div>
+  <p id="page-top">
+    <a href="#">Page Top</a>
+  </p>
+  <small>
+    <p class="footer-copyright"><small>&copy; 2023 L-sunsui Co.LTD. All Rights Reserved.</small></p>
+    <p class="footer-pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+    <p class="Ls-footer__footer_text_low">
+      © L-sunsui CO., LTD.
+    </p>
+  </small>
 </div>
+</footer>
 
 <script src="js/main.js"></script>
 <script src="js/5-4-1.js"></script>
