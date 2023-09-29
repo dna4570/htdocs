@@ -6,7 +6,9 @@
   padding:0;
   box-sizing:border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 h1{
   font-size:1.2rem;
 }
@@ -510,7 +512,7 @@ section
 }
 
 /*--------------------------------------
-tab
+.Ls-test04-sec11　タブtab
 ---------------------------------------*/
 .Ls-test04-sec11{
 	max-width:1300px;
@@ -518,42 +520,52 @@ tab
   margin:0 auto;
 }
 
-.tab{
-	display:flex;
-	flex-wrap:wrap;
-  list-style:none;
+.menu {
+  display: flex;
+  /*隙間*/
+  gap: 3px;
+  margin: 0;
+  padding: 0;
 }
 
-.tab li a {
-	display:block;
-	background:#ddd;
-	margin:0 2px;
-	padding:10px 20px;
-}
-.tab li.active a{
-	background:#fff;
-}
-.area{
-	display:none;
-	opacity:0;
-	background:#fff;
-	padding:50px 20px;
-}
-.area.is-active{
-	display:block;
-	animation-name:displayAnime;
-	animation-duration:1s;
-	animation-fill-mode:forward;
+.item {
+  flex: 0 0 140px;
+  list-style: none;
+  text-align: center;
+  background: #d9d9d9;
+  padding: 7px 5px 3px;
+  border-radius: 5px 5px 0 0;
 }
 
-@keyframes displayAnime{
+.item.active {
+  background: pink;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.container {
+  border: 2px solid pink;
+  padding: 20px;
+}
+
+.content {
+  display: none;
+}
+
+.content.show {
+  display: block;
+}
+
+/* @keyframes displayAnime{
 	from{
 		opacity:0;
 	}
 	to{
 		opacity:1;
 	}
-}
+} */
 
 /*-----------------------------------
  .Ls-test04-sec12

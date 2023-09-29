@@ -16,7 +16,7 @@
 <body>
 <header>
 <!-----------------------------
-ヘッダー
+page-header ヘッダー
 ------------------------------>
 <div class="page-header">
   <div class="page-header__inner">
@@ -63,7 +63,7 @@
 </header>
 
 <!-------------------------------
-section01
+Ls-test04-section01
 --------------------------------->
 <div>
   <div class="Ls-test04-section01">
@@ -141,7 +141,7 @@ section01
 </div>
 
 <!-----------------------------
-
+Ls-test04-sec04
 ------------------------------>
 <div>
   <div class="Ls-test04-sec04" >
@@ -178,7 +178,7 @@ section01
   </div>
 </div>
 <!-----------------------------
-
+Ls-test04-sec05
 ------------------------------>
 <div class="Ls-test04-sec05" >
   <div class="Ls-test04-sec05__inner" >
@@ -240,28 +240,22 @@ front_news
 Ls-test04-sec11
 ------------------------------>
 <div class="Ls-test04-sec11">
-<ul class="tab">
-  <li><a href="#lunch">ランチ</a></li>
-  <li><a href="#drink">ドリンク</a></li>
+<ul class="menu">
+  <li class="item active">JavaScript</li>
+  <li class="item">HTML&CSS</li>
+  <li class="item">WordPress</li>
 </ul>
-
-<div id="lunch" class="area">
-  <h2>ランチ<h2>
-    <ul>
-      <li>ガパオライス</li>
-      <li>ミートソーススパゲッティー</li>
-      <li>ハンバーグ定食</li>
-    </ul>
-<!---/area--->
-</div>
-  <div id="drink" class="area">
-    <h2>ドリンク</h2>
-    <ul>
-      <li>烏龍茶</li>
-      <li>オレンジジュース</li>
-      <li>ジンジャーエール</li>
-    </ul>
+<div class="container">
+  <div class="content show">
+    初学者にとってハードルの高いJavaScriptを概念から順序を立ててしっかりと解説しています。技術の幅が広いJavaScriptですが、Web制作に必要な知識と技術をこれ１本で学ぶことができます。
   </div>
+  <div class="content">
+    まずは基礎を徹底して習得し、コース中盤では実務でよく使うテクニックも実際に手を動かしながら学習します。また、後半では高度なテクニックやCSS設計まで学習し、技術者として十分なスキル獲得を目指します。
+  </div>
+  <div class="content">
+    WordPress開発に必要なスキルをゼロから実務レベルまで学ぶことができます。WordPress開発に必要なWebの基礎知識やPHPついても豊富なレッスンがあるので、これ１本でWordPressを網羅的に学習できます。
+  </div>
+</div>
 </div>
 <!-----------------------------
 Ls-test04-sec12
@@ -362,11 +356,11 @@ footer
   </small>
 </div>
 </footer>
-<p class="footer-pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+<a id="go_top" href="#top">ページの先頭へ戻る</></a>
 
-<script src="js/main.js"></script>
 <script src="js/5-4-1.js"></script>
 <script src="js/5-2-4.js"></script>
 <script src="js/8-1-1.js"></script>
+<script stc="js/tab.js"></script>
 </body>
 </html>
