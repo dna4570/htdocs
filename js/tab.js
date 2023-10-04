@@ -1,13 +1,12 @@
 'use strict';
-
 const items = document.querySelectorAll('.item');
 const contents = document.querySelectorAll('.content');
 
-items.forEach(function (item, index) {
-	item.addEventListener('click', function () {
-		items.forEach(function (element) {
+items.forEach(function (item,index) {
+	item.addEventListener('click',function () {
+		items.forEach(function(element){
 			if (item !== element) {
-				element.classList.remove('active');
+				element.classList.remove('active')
 			}
 		});
 		item.classList.add('active');
@@ -19,3 +18,5 @@ items.forEach(function (item, index) {
 		contents[index].classList.add('show');
 	});
 });
+
+
