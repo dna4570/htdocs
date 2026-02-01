@@ -27,7 +27,7 @@ img{
   object-fit:cover;
 }
 p{
-  margin-top:20px;
+  margin: 20px 0 0;
 }
 small{
   background:#333;
@@ -82,7 +82,7 @@ body {
   padding: 20px;
 }
 section{
-  padding:100px 30px;
+  padding:80px 0px;
 }
 section:nth-child(2n){
   background:#f3f3f3;
@@ -176,7 +176,6 @@ button:hover{ cursor:pointer; background:#18c;}
   margin-top: 40px 40px 40px 40px;
 }
 .Ls-test04-section01__left_box p {
-  line-height: 30px;
   font-size: 20px
 }
 .Ls-test04-section01__right_box img {
@@ -475,9 +474,7 @@ section
 }
 .Ls-test04-sec12__inner p{
 	font-size:25px;
-	font-style:bold;
-	text-align:center;
-	margin-bottom:40px;
+
 }
 /*------------------------*/
 .Ls_2column_hidariimg{
@@ -825,7 +822,7 @@ button:hover {
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100vw;
-  max-width: 1300vw;
+  max-width: 1300px;
   margin: 0 auto;
 	border-left: 1px solid #333;
 }
@@ -834,7 +831,7 @@ button:hover {
 }
 .Ls-footer__gnavi__lists {
   max-width: 1300px;
-  width: 100pw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -844,6 +841,24 @@ button:hover {
   text-decoration: none;
   padding-right: 150px;
   padding-left: 150px;
+}
+
+/* まず横はみ出し防止（応急処置） */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* 本文の最大幅（縦ライン） */
+:root {
+  --container: 1120px;
+  --px: 24px;
+}
+
+.page {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--px);
 }
 /*---------------------------------------
 @media screen スマホ
