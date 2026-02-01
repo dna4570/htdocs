@@ -20,7 +20,11 @@ headers ヘッダー
 <header>
   <ul class="headers">
     <li class="logo"><a href="">Code Tips</a></li>
-    <ul class="menus">
+    <li class="hamburger show">
+      <img class="open" src="./image/close_FILL0_wght400_GRAD0_opsz48.png" alt="">
+      <img class="close" src="./image/close_FILL0_wght400_GRAD0_opsz48.png" alt="">
+    </li>
+    <ul class="menus show">
       <li><a href="">サービス</a></li>
       <li><a href="">会社概要</a></li>
       <li><a href="">採用情報</a></li>
@@ -29,7 +33,10 @@ headers ヘッダー
     <li class="search">
       <input type="search" />
       <label for="" class="search-icon">
-        <img src="./search-header/images/serch.png" alt="">
+        <li class="hamburger >
+        <img class="open" src="./image/search-header/images/serch.png" alt="">
+        <img class="close" src="./image/search-header/images/close.png" alt="">
+        </li>
       </label>
     </li>
   </ul>
@@ -89,6 +96,7 @@ Ls-test04-section01
       <p>
         infomation ＆ NEWS release
       </p>
+      <div id="output"></div>
 		</div>
   </div>
 </div>
@@ -155,19 +163,22 @@ Ls-test04-sec05
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed ex, animiexplicabo deleniti assumenda nemo autem cum delectus. Ea, nesciunt earum id ipsum itaquelibero debitis cum molestiae quisquam.
     </p>
   </div>
-  <div class="Ls-test04-sec05_low">
+</div>
+
+<div class="Ls-test04-sec05_low">
+  <div class="Ls-test04-sec05_low_inner">
     <h2 class="Ls-test04-sec05__left_big" style="text-align:left;">
       離れている相手に案内するHTML&CSS
     </h2>
-      <p class="Ls-test04-sec05__left_small" style="text-align:left;">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestias dolorem,aliquid eos laborum quos, vel tempore repellendus at aut sequi necessitatibus. Atque cumnumquam quaerat labore veritatis nisi officia?
-      </p>
-      <h2 class="Ls-test04-sec05__left_big2" style="text-align:left;">
-        周囲に案内するjQuery
-      </h2>
-      <p class="Ls-test04-sec05__left_small2" style="text-align:left;">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolor doloremque corporis,ipsum sed accusamus. Officia blanditiis modi iure soluta commodi iusto sequi repellendusvelit ut neque. Assumenda, dolores modi.
-      </p>
+    <p class="Ls-test04-sec05__left_small" style="text-align:left;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestias dolorem,aliquid eos laborum quos, vel tempore repellendus at aut sequi necessitatibus. Atque cumnumquam quaerat labore veritatis nisi officia?
+    </p>
+    <h2 class="Ls-test04-sec05__left_big2" style="text-align:left;">
+      周囲に案内するjQuery
+    </h2>
+    <p class="Ls-test04-sec05__left_small2" style="text-align:left;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolor doloremque corporis,ipsum sed accusamus. Officia blanditiis modi iure soluta commodi iusto sequi repellendusvelit ut neque. Assumenda, dolores modi.
+    </p>
     <h2 class="Ls-test04-sec05__left_big3" style="text-align:left;">
       簡単なPhotoshop操作
     </h2>
@@ -237,6 +248,43 @@ Ls-test04-sec12
       </p>
   </div>
 </div>
+
+<!-----------------------------
+フォーム
+------------------------------->
+<!--お問合せフォーム-->
+<section id="frm">
+  <h1>お問合せフォーム</h1>
+  <p class="err"></p>
+  <table>
+    <tr>
+      <th>お名前<span>必須</span></th>
+      <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+      <th>性別<span>必須</span></th>
+      <td>
+        <input type="radio" name="gender" value="男性"> 男性　
+        <input type="radio" name="gender" value="女性"> 女性
+      </td>
+    </tr>
+    <tr>
+      <th>電話番号<span>必須</span></th>
+      <td><input type="text" name="tel"></td>
+    </tr>
+    <tr>
+      <th>メールアドレス</th>
+      <td><input type="text" name="mail"></td>
+    </tr>
+    <tr>
+      <th>内容<span>必須</span></th>
+      <td><textarea name="message" rows="5"></textarea></td>
+    </tr>
+  </table>
+  <div class="submit-button"><button>送信する</button></div>
+</section>
+
+
 <!-----------------------------
 footer
 ------------------------------>
@@ -322,10 +370,9 @@ footer
 </div>
 </footer>
 <a id="go_top" href="#top">ページの先頭へ戻る</></a>
-
-<script src="./js/5-4-1.js"></script>
-<script src="./js/5-2-4.js"></script>
-<script src="./js/8-1-1.js"></script>
+<script src="./hamberger.js"></script>
+<script src="./js/script.js"></script>
 <script src="./js/tab.js"></script>
+<script src="./js/form.js"></script>
 </body>
 </html>

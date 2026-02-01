@@ -77,7 +77,6 @@ header{
   place-items:center;
   cursor:pointer;
 }
-
 body {
   background: #f3f3f3;
   padding: 20px;
@@ -100,9 +99,50 @@ section:nth-child(2n){
   padding: 30px;
 }
 /*---------------------------------
+フォーム
+----------------------------------*/
+<style>
+*{ margin:0; padding:0; font-size:16px;}
+body{ padding:5%;}
+h1{ text-align:center; font-size:24px; font-weight:normal; margin:0 0 20px 0;}
+section{ width:80%; margin:0 auto;}
+table{ width:100%; margin:20px auto 20px auto; border-collapse:collapse;}
+th,td{ padding:10px 15px; border:1px solid #999; font-weight:normal; text-align:left;}
+th{ background:#eee; position:relative; width:30%;}
+td{ background:#fff;}
+input{ padding:5px;}
+textarea{ padding:5px; width:90%;}
+th span{ font-size:12px; background:#f40; color:#fff; padding:0 3px; border-radius:3px; position:absolute; right:15px;}
+.submit-button{ text-align:center;}
+button{ background:#09e; border:0; border-radius:5px; padding:15px 50px; color:#fff; font-size:18px; transition:.3s;}
+button:hover{ cursor:pointer; background:#18c;}
+.err{ background:#c00; color:#fff; padding:5px 15px; display:none;}
+#end{ padding:5%; text-align:center; display:none;}
+#end h1{ color:#09e;}
+#end div{ border:1px solid #ccc; background:#fff; padding:5% 0;}
+
+/*---------------------------------
 .headers ヘッダー
 ----------------------------------*/
+.hamburger{
+  width:32px;
+  height:32px;
+  padding:8px 32px;
+  display:none;
+}
+.hamburger .open{
+  display:block;
+}
+.hamburger .close{
+  display:none;
+}
+.hamburger .show .open {
+  display: none;
+}
 
+.hamburger .show .close {
+  display: block;
+}
 /*----------------------------------
 .Ls-test04__section01 Tokyo Metro
 ----------------------------------*/
@@ -385,7 +425,6 @@ section
   margin: 0;
   padding: 0;
 }
-
 .item {
   flex: 0 0 140px;
   list-style: none;
@@ -394,24 +433,19 @@ section
   padding: 7px 5px 3px;
   border-radius: 5px 5px 0 0;
 }
-
 .item.active {
   background: pink;
 }
-
 .item:hover {
   cursor: pointer;
 }
-
 .container {
   border: 2px solid pink;
   padding: 20px;
 }
-
 .content {
   display: none;
 }
-
 .content.show {
   display: block;
 }
@@ -454,7 +488,115 @@ section
 .dev-container{
   list-style:none;
 }
-/*new footer*/
+/*-----------------------
+new footer
+--------------------------*/
+/* * {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  padding: 5%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+} */
+
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  margin: 20px auto 20px auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px 15px;
+  border: 1px solid #999;
+  font-weight: normal;
+  text-align: left;
+}
+
+th {
+  background: #eee;
+  position: relative;
+  width: 30%;
+}
+
+td {
+  background: #fff;
+}
+
+input {
+  padding: 5px;
+}
+
+textarea {
+  padding: 5px;
+  width: 90%;
+}
+
+th span {
+  font-size: 12px;
+  background: #f40;
+  color: #fff;
+  padding: 0 3px;
+  border-radius: 3px;
+  position: absolute;
+  right: 15px;
+}
+
+.submit-button {
+  text-align: center;
+}
+
+button {
+  background: #09e;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px 50px;
+  color: #fff;
+  font-size: 18px;
+  transition: .3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #18c;
+}
+
+.err {
+  background: #c00;
+  color: #fff;
+  padding: 5px 15px;
+  display: none;
+}
+
+#end {
+  padding: 5%;
+  text-align: center;
+  display: none;
+}
+
+#end h1 {
+  color: #09e;
+}
+
+#end div {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 5% 0;
+}
 /*----------------------------------
   Footer
 ------------------------------------*/
@@ -706,6 +848,32 @@ section
 /*---------------------------------------
 @media screen スマホ
 ----------------------------------------*/
-@media screen and (min-width: 768px) {
-
+@media (min-width:1024px) {
+  header{
+    padding:8px 40px 8px 8px;
+  }
+  .logo{
+    display:none;
+  }
+  .menu{
+    flex:4;
+  }
+}
+@media (max-width:768px){
+  .hamburger{
+    display: block;
+  }
+  .menus{
+    position: fixed;
+    top: -400px;
+    right: 0;
+    width: 100%;
+    background: #068fff;
+    display: inline-block;
+  }
+  .menus li {
+    display: grid;
+    place-items: center;
+    margin: 24px 0;
+  }
 }
